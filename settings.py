@@ -1,0 +1,8 @@
+COOKIES = {}
+
+HEADERS = {}
+
+PARAMS_XSRF = ''
+PARAMS_HASH_ID = ''
+DOWNLOAD_PATH = './avatars'
+DOWNLOAD_DELAY = 0.6
