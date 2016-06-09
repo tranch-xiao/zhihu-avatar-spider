@@ -34,9 +34,8 @@ def parse_page(html):
         imgs = soup.findAll('img', {'class': 'zm-item-img-avatar'})
         for img in imgs:
             try:
-                sleep(settings.DOWNLOAD_DELAY)
                 download_image(img['src'])
-
+                sleep(settings.DOWNLOAD_DELAY)
             except requests.exceptions.ConnectionError:
                 print 'Download image timeout.'
                 continue
